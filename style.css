@@ -1,0 +1,179 @@
+/* Styles globaux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #2d3748;
+    line-height: 1.6;
+    background-color: #f7fafc;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header & Navigation */
+header {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a202c;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #10b981; /* Vert clair / Émeraude */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4a5568;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #10b981;
+}
+
+.btn-nav {
+    background-color: #10b981;
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.btn-nav:hover {
+    background-color: #059669;
+}
+
+/* Hero Section - Ambiance Mer & Vert clair */
+.hero {
+    background: linear-gradient(135deg, #065f46 0%, #0d9488 50%, #0284c7 100%);
+    padding: 160px 0 100px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    color: #e2e8f0;
+    margin-bottom: 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: #10b981; /* Vert clair */
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #059669;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #ffffff;
+    color: #065f46;
+}
+
+/* Dual Section (Cartes de cibles) */
+.dual-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: -50px;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 80px;
+}
+
+.card-target {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    border-top: 4px solid #10b981; /* Ligne verte claire distinctive */
+}
+
+.card-target h3 {
+    font-size: 1.5rem;
+    color: #1a202c;
+    margin-bottom: 15px;
+}
+
+.card-target p {
+    color: #718096;
+    margin-bottom: 20px;
+}
+
+.link-arrow {
+    text-decoration: none;
+    color: #10b981;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.link-arrow:hover {
+    color: #059669;
+    text-decoration: underline;
+}
